@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthWeather</title>
+    <link rel="stylesheet" href="css/try.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">EarthWeather</h1>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="description">
+            <h2>Welcome to EarthWeather</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed,
+                convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+        <h2>Data Sensors</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Temperature</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/awan.png" alt="Card 1 Image" style="width: 100px; height: 100px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Humidity</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/card2.jpg" alt="Card 2 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Soil Moisture</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/card3.jpg" alt="Card 3 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Soil Moisture</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/card3.jpg" alt="Card 3 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forecast Cards -->
+    <div class="forecast-cards">
+        <h2>Data Forecasts Weather</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Temperature</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/forecast1.jpg" alt="Forecast 1 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Humidity</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/forecast2.jpg" alt="Forecast 2 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card 3</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/forecast3.jpg" alt="Forecast 3 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card 4</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/forecast4.jpg" alt="Forecast 4 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card 5</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/forecast5.jpg" alt="Forecast 5 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Card 6</h3>
+                <!-- Tambahkan gambar di sini -->
+                <img src="images/forecast6.jpg" alt="Forecast 6 Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 EarthWeather. All rights reserved.</p>
+    </footer>
+
+    <!-- <script src="jquery/script.js"></script> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

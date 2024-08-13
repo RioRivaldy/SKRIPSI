@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthWeather</title>
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">
+            <!-- <img src="images/logo.png" alt="EarthWeather Logo"> -->
+            <a href="landingpage.html">EarthWeather</a>
+        </h1>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="index.php">Data Sensors & Weather</a></li>
+            <!-- <li><a href="#">Data Weather</a></li> -->
+            <!-- <li><a href="#">Portfolio</a></li> -->
+            <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="description">
+            <h2 align="center" class="animated-text">Welcome to EarthWeather!</h2>
+            <p align="center">Welcome to the EarthWeather! This app is used for monitoring data sensors and
+                forecasts weather. Helps you in cultivating ornamental plants and make them more effective and efficient
+                in cultivation.
+            </p>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+        <h2>Data Sensors</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Temperature</h3>
+                <img src="images/dht11.png" alt="Card 1 Image">
+                <p>Sensor DHT11 digunakan untuk mengukur suhu lingkungan. <br><br>
+                    Data Temperature didapatkan dari sensor DHT11 ini.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Humidity</h3>
+                <img src="images/dht11.png" alt="Card 2 Image">
+                <p>Sensor DHT11 juga digunakan untuk mengukur kelembaban udara sekitar.<br><br>
+                    Data humidity atau kelembaban didapatkan dari sensor DHT11 ini.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Soil Moisture</h3>
+                <img src="images/soil moisture.png" alt="Card 3 Image">
+                <p>Sensor Soil Moisture digunakan untuk mengukur kelembaban tanah.<br><br>
+                    Data moisture didapatkan dari sensor Soil Moisture ini.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Ultrasoinic HCSR04</h3>
+                <img src="images/ultrasonic-removebg-preview.png" alt="Card 4 Image">
+                <p>Sensor Ultrasoinic digunakan untuk mengukur tinggi wadah air.<br><br>
+                    Data jarak ketinggian air didapatkan dari sensor Ultrasoinic ini.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forecast Cards -->
+    <div class="forecast-cards">
+        <h2>Data Forecasts Weather</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Cuaca</h3>
+                <img src="images/cuaca.png" alt="Forecast 1 Image" style="width: 150px; height: 120px;">
+                <p>Berisi data cuaca seperti berawan, hujan petir, dan lainnya.</p>
+            </div>
+            <div class="card">
+                <h3>Temperature °C</h3>
+                <img src="images/temp.png" alt="Forecast 2 Image">
+                <p>Berisi data Temperature dalam celcius dari cuaca.</p>
+            </div>
+            <div class="card">
+                <h3>Temperature °F</h3>
+                <img src="images/temp.png" alt="Forecast 3 Image">
+                <p>Berisi data Temperature dalam fahrenheit dari cuaca.</p>
+            </div>
+            <div class="card">
+                <h3>Kode Cuaca</h3>
+                <img src="images/kode cuaca.png" alt="Forecast 4 Image">
+                <p>Berisi data kode cuaca berdasarkan BMKG seperti 0 menandakan cuaca cerah.</p>
+            </div>
+            <div class="card">
+                <h3>Humidity</h3>
+                <img src="images/humid.png" alt="Forecast 5 Image">
+                <p>Berisi data kelembaban udara dari cuaca.</p>
+            </div>
+            <div class="card">
+                <h3>Jam Cuaca</h3>
+                <img src="images/waktu.png" alt="Forecast 6 Image">
+                <p>Berisi data waktu terjadinya dari kondisi cuaca.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EarthWeather. All rights reserved. Data Sourced By Sensors and Data Terbuka BMKG.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

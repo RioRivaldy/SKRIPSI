@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure full viewport height */
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #5d88d5;
+}
+
+.separator {
+    width: 100%;
+    height: 60px;
+    /* Adjust height to fit larger text */
+    background-color: #4CAF50;
+    /* Change to a vibrant background color */
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow to create the scrolling effect */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a slight shadow for depth */
+}
+
+.marquee {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    font-size: 24px;
+    /* Increase font size */
+    color: #fff;
+    /* Change text color */
+    font-weight: bold;
+    /* Make text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Optional: Add shadow for text to stand out */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    flex-grow: 1;
+    /* add flex grow to content */
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 25px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.4s;
+    /* add transition effect */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* add hover effect */
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+img {
+    padding-top: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+/* CSS for Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    margin-top: auto;
+    /* Push the footer to the bottom */
+}
+
+.dropdown {
+    text-align: center;
+    margin: 20px;
+}
+
+.styled-select {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for the main weather panels */
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Individual container for each location */
+.location-container {
+    flex: 1;
+    margin: 10px;
+    max-width: 30%;
+    /* Control the width of each card */
+}
+
+/* Header for each location */
+.header {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0;
+    background-color: #1A2130;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Grid for weather data within each location */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns layout */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for individual weather data cards */
+.card-1 {
+    background-color: #aadbc2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow to each card */
+}
+
+/* .card-1 img {
+    width: 110px;
+    height: 110px;
+} */
+
+.card-1 img {
+    width: 80px;
+    /* Adjust the width for better fit */
+    height: 80px;
+    /* Adjust the height for better fit */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+    margin: 10px 0;
+    /* Add margin for better spacing */
+}
+
+/* Styling for the text and other elements inside card-1 */
+.card-1 h3 {
+    margin: 5px 0;
+    /* Adjust margin for better spacing */
+    font-size: 18px;
+    /* Adjust font size if needed */
+}
+
+.card-1 p {
+    font-size: 14px;
+    /* Adjust font size for other text */
+    margin: 2px 0;
+    /* Adjust margin for better spacing */
+}
+
+/* Date header within the location panel */
+.date-header {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+
+    .navbar .menu-toggle {
+        display: flex;
+    }
+
+    .separator {
+        height: 10px;
+        /* Adjust for smaller screens */
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

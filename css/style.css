@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.row {
+    width: 100%;
+    padding: 0 80px;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    color: #fff;
+    z-index: 1000;
+    /* Menambah z-index tinggi untuk memastikan berada di depan elemen lain */
+}
+
+.navbar h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    /* Hanya muncul pada layar kecil */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    /* Warna teks putih untuk link */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    /* Tambahkan transisi untuk efek hover */
+}
+
+.navbar ul li a:hover {
+    background-color: #5d88d5;
+    /* Warna latar belakang saat hover */
+    color: #fff;
+    /* Warna teks tetap putih saat hover */
+}
+
+.content {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    /* Mengkompensasi ruang navbar */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.content p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.content a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    background-color: #5d88d5;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    /* Tambahkan transisi untuk efek hover */
+}
+
+.content a:hover {
+    background-color: #2d88d5;
+    /* Warna latar belakang lebih gelap saat hover */
+}
+
+/* Responsive styling untuk perangkat dengan lebar maksimal 768px */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        /* Sesuaikan padding untuk layar kecil */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        /* Sembunyikan menu awalnya */
+        position: absolute;
+        top: 60px;
+        /* Atur posisi relatif terhadap navbar */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        /* Warna latar belakang menu dropdown */
+        padding: 10px 0;
+        z-index: 999;
+        /* Pastikan menu dropdown berada di depan elemen lain */
+    }
+
+    .navbar ul.show {
+        display: flex;
+        /* Tampilkan menu saat class show ada */
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+
+    .navbar .menu-toggle {
+        display: flex;
+        /* Tampilkan tombol toggle pada layar kecil */
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+    .row {
+        padding: 0 40px;
+    }
+
+    .navbar ul li {
+        margin-left: 15px;
+        /* Reduce spacing for smaller screens */
+    }
+
+    .navbar h1 {
+        font-size: 30px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content a {
+        font-size: 17px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        padding: 0 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .navbar h1 {
+        font-size: 28px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content a {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row {
+        padding: 0 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+    }
+
+    .navbar ul {
+        display: none;
+        /* Optionally hide menu for very small screens */
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .content a {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+}

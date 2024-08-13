@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sensor</title>
+    <link rel="stylesheet" href="css/tabel.css">
+    <script src="jquery/tabel.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Data Sensor</h1>
+        <table id="sensorTable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>ID</th>
+                    <th>Suhu</th>
+                    <th>Kelembaban</th>
+                    <th>Mois</th>
+                    <th>Jarak</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan diisi oleh JavaScript -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button id="prevPage" onclick="prevPage()">&#9664;</button>
+            <span id="pageNumbers"></span>
+            <input type="number" id="pageInput" min="1" max="1" value="1" onchange="goToPage()" />
+            <button id="nextPage" onclick="nextPage()">&#9654;</button>
+            <span id="totalPages"></span>
+        </div>
+    </div>
+</body>
+
+</html>

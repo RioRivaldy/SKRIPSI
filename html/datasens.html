@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthWeather</title>
+    <link rel="stylesheet" href="css/datasens.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>EarthWeather</h1>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h1>Real Time Data Sensors</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Card 1</h2>
+                    <img src="image1.jpg" alt="Image 1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum
+                        magna sed, convallis ex.</p>
+                </div>
+                <div class="card">
+                    <h2>Card 2</h2>
+                    <img src="image2.jpg" alt="Image 2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum
+                        magna sed, convallis ex.</p>
+                </div>
+                <div class="card">
+                    <h2>Card 3</h2>
+                    <img src="image3.jpg" alt="Image 3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum
+                        magna sed, convallis ex.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 EarthWeather. All rights reserved.</p>
+    </footer>
+    <script src="jquery/datasens.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.navbar ul');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
